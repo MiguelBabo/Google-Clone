@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Product Sans", sans-serif;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section #container{
+    padding: 20px;
+    margin-top: -225px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+section #container #logoCont{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+section #container #logo{
+    width: 300px;
+
+}
+
+section #container #search{
+    width: 33vw;
+    max-height: 5vh;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid hsla(0, 0%, 0%, 0.1);
+    border-radius: 50px;
+    transition: .2s;
+}
+section #container #search:hover{
+    box-shadow: 0 0 20px hsla(0, 0%, 0%, .1);
+    transition: .2s;
+}
+
+section #container #search #searchIco{
+    width: 18px;
+    height: 17px;
+    opacity: .70;
+}
+
+section #container #search #mic{
+    width: 17px;
+    height: 23px;
+}
+
+section #container #search input{
+    border: none;
+    outline: none;
+    width: 28vw;
+    padding: 15px;
+    font-size: 17px;
+}
+
+section #container #btn{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+}
+
+section #container #btn button{
+    border: 2px solid hsla(0, 0%, 0%, 0.1);
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+section #container #btn button:hover{
+    box-shadow: 0 0 20px hsla(0, 0%, 0%, .1);
+    transition: .2s;
+}
+
+@media screen and (max-width: 512px){
+    section #container #search{
+        width: 85vw;
+    }
+    section #container #search input{
+        width: 80vw;
+    }
+    section #container #logoCont{
+        width: 85vw;
+    }
+    section #container #btn{
+        width: 85vw;
+    }
+}
